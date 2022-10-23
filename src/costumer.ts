@@ -1,4 +1,12 @@
-//Changed the anemic class to fit to the business rules
+//Business Complexity
+//Domain
+// - Entity
+// Customer.ts (Business Rules)
+
+//Acidental Complexity
+//Infra - Extern World - Low Level
+// Entity / Model
+// - Customer.ts with getters and setters
 
 class Customer {
   private id: string;
