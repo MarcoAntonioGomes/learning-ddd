@@ -1,3 +1,5 @@
+import Address from "./entities/address";
+import Customer from "./entities/costumer";
 import Order from "./entities/order";
 import OrderItem from "./entities/order_item";
 

@@ -3,12 +3,14 @@
 // - Entity
 // Customer.ts (Business Rules)
 
+import Address from "./address";
+
 //Acidental Complexity
 //Infra - Extern World - Low Level
 // Entity / Model
 // - Customer.ts with getters and setters
 
-class Customer {
+export default class Customer {
   private id: string;
   private name: string;
   private address!: Address;
@@ -32,6 +34,11 @@ class Customer {
 
   changeName(name: string) {
     this.name = name;
+    this.validate();
+  }
+
+  isActived() {
+    return this.active;
   }
 
   activate() {
