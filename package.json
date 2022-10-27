@@ -4,7 +4,7 @@
   "description": "Learning DDD",
   "main": "y",
   "scripts": {
-    "test": "jest",
+    "test": "npm run tsc -- --noEmit && jest",
     "tsc": "tsc"
   },
   "author": "",
