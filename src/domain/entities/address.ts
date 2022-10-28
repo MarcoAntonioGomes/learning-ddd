@@ -1,34 +1,50 @@
 export default class Address {
-  _street: string = "";
-  _number: number = 0;
-  _zip: string = "";
-  _city: string = "";
+  private street: string = "";
+  private number: number = 0;
+  private zipCode: string = "";
+  private city: string = "";
 
-  constructor(street: string, number: number, zip: string, city: string) {
-    this._street = street;
-    this._number = number;
-    this._zip = zip;
-    this._city = city;
+  constructor(street: string, number: number, zipCode: string, city: string) {
+    this.street = street;
+    this.number = number;
+    this.zipCode = zipCode;
+    this.city = city;
 
     this.validate();
   }
 
   validate() {
-    if (this._street.length === 0) {
+    if (this.street.length === 0) {
       throw new Error("Street is required");
     }
-    if (this._number === 0) {
+    if (this.number === 0) {
       throw new Error("Number is required");
     }
-    if (this._zip.length === 0) {
+    if (this.zipCode.length === 0) {
       throw new Error("Zip is required");
     }
-    if (this._city.length === 0) {
+    if (this.city.length === 0) {
       throw new Error("City is required");
     }
   }
 
+  getStreet(): string {
+    return this.street;
+  }
+
+  getNumber(): number {
+    return this.number;
+  }
+
+  getZipCode(): string {
+    return this.zipCode;
+  }
+
+  getCity(): string {
+    return this.city;
+  }
+
   toString() {
-    return `${this._street}, ${this._number}, ${this._zip} ${this._city}`;
+    return `${this.street}, ${this.number}, ${this.zipCode} ${this.city}`;
   }
 }

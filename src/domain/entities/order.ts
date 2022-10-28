@@ -36,6 +36,6 @@ export default class Order {
   }
 
   calculateTotal(): number {
-    return this.items.reduce((acc, item) => acc + item.getPrice(), 0);
+    return this.items.reduce((acc, item) => acc + item.orderItemTotal(), 0);
   }
 }

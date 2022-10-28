@@ -38,6 +38,10 @@ export default class Customer {
     this.validate();
   }
 
+  getName() {
+    return this.name;
+  }
+
   isActived() {
     return this.active;
   }
@@ -66,6 +70,10 @@ export default class Customer {
   }
 
   set Address(address: Address) {
+    this.address = address;
+  }
+
+  changeAddress(address: Address) {
     this.address = address;
   }
 }
