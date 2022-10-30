@@ -10,7 +10,7 @@ export default class CustomerRepository implements CustomerRepositoryInterface {
       name: entity.getName(),
       street: entity.Address.getStreet(),
       number: entity.Address.getNumber(),
-      zipcode: entity.Address.getZipCode(),
+      zipCode: entity.Address.getZipCode(),
       city: entity.Address.getCity(),
       active: entity.isActived(),
       rewardPoints: entity.getRewardPoints(),

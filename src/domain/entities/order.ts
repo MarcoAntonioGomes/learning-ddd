@@ -38,4 +38,28 @@ export default class Order {
   calculateTotal(): number {
     return this.items.reduce((acc, item) => acc + item.orderItemTotal(), 0);
   }
+
+  getId(): string {
+    return this.id;
+  }
+
+  getCustomerId(): string {
+    return this.customerId;
+  }
+
+  getItems(): OrderItem[] {
+    return this.items;
+  }
+
+  getTotals(): number {
+    return this.total;
+  }
+
+  addItem(item: OrderItem): void {
+    this.items.push(item);
+  }
+
+  changeCustomer(customerId: string): void {
+    this.customerId = customerId;
+  }
 }

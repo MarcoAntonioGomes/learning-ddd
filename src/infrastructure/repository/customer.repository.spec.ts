@@ -39,7 +39,7 @@ describe("Customer repository test", () => {
       rewardPoints: customer.getRewardPoints(),
       street: address.getStreet(),
       number: address.getNumber(),
-      zipcode: address.getZipCode(),
+      zipCode: address.getZipCode(),
       city: address.getCity(),
     });
   });
@@ -62,7 +62,7 @@ describe("Customer repository test", () => {
       rewardPoints: customer.getRewardPoints(),
       street: address.getStreet(),
       number: address.getNumber(),
-      zipcode: address.getZipCode(),
+      zipCode: address.getZipCode(),
       city: address.getCity(),
     });
   });
