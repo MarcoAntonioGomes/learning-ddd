@@ -3,11 +3,9 @@
 // - Entity
 // Customer.ts (Business Rules)
 
-import EventDispatcher from "../event/@shared/event-dispatcher";
-import EventHandlerInterface from "../event/@shared/event-handler.interface";
-import CustomerAddressChangedEvent from "../event/customer/customer-address-changed.event";
-import EnviaConsoleLogTrocaDeEnderecoHandler from "../event/customer/handler/envia-console-log-troca-de-endereco.handle";
-import Address from "./address";
+import EventDispatcher from "../../@shared/event/event-dispatcher";
+import CustomerAddressChangedEvent from "../event/customer-address-changed.event";
+import Address from "../value-object/address";
 
 //Acidental Complexity
 //Infra - Extern World - Low Level

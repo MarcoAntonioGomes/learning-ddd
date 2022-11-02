@@ -1,11 +1,11 @@
-import Address from "../../entities/address";
-import Customer from "../../entities/costumer";
-import CustomerCreatedEvent from "../customer/customer-created.event";
-import EnviaConsoleLogTrocaDeEnderecoHandler from "../customer/handler/envia-console-log-troca-de-endereco.handle";
-import EnviaConsoleLogHandler from "../customer/handler/envia-console-log.handler";
-import EnviaConsoleLog2Handler from "../customer/handler/envia-console-log2.handler";
-import SendEmailWhenProductIsCreatedHandler from "../product/handler/send-email-when-product-is-created.handler";
-import ProductCreatedEvent from "../product/product-created.event";
+import Customer from "../../customer/entity/costumer";
+import CustomerCreatedEvent from "../../customer/event/customer-created.event";
+import EnviaConsoleLogTrocaDeEnderecoHandler from "../../customer/event/handler/envia-console-log-troca-de-endereco.handle";
+import EnviaConsoleLogHandler from "../../customer/event/handler/envia-console-log.handler";
+import EnviaConsoleLog2Handler from "../../customer/event/handler/envia-console-log2.handler";
+import Address from "../../customer/value-object/address";
+import SendEmailWhenProductIsCreatedHandler from "../../product/event/handler/send-email-when-product-is-created.handler";
+import ProductCreatedEvent from "../../product/event/product-created.event";
 import EventDispatcher from "./event-dispatcher";
 
 describe("domain events test", () => {
